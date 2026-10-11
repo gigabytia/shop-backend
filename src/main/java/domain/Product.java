@@ -14,6 +14,10 @@ public class Product {
         this.price = price;
     }
 
+    public UUID getId() {
+        return id;
+    }
+
     public String getName() {
         return name;
     }
