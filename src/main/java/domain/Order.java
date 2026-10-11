@@ -1,5 +1,6 @@
 package domain;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
 
@@ -19,7 +20,7 @@ public class Order {
     }
 
     public List<OrderItem> getOrderItems() {
-        return orderItems;
+        return new ArrayList<>(orderItems);
     }
 
     public UUID getUserId() {
